@@ -19,7 +19,8 @@
 }
 
 .card{
-    width: 23%;
+    width: 400px;
+    height: auto;
     box-shadow: 0 0 4px 3px black;
     text-align: center;
     padding: 1.5em;
@@ -28,7 +29,8 @@
 }
 
 .images{
-    width: 80%;
+    width: 200px;
+    height: 200px;
 }
 
 .title{
@@ -94,10 +96,12 @@ footer{
 
 
 @media screen and (max-width: 430px){
-   
-    .card {
-        width: 20%;
-        height: 40%;
+    #cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 340px;
     }
 }
 
@@ -105,12 +109,18 @@ footer{
 /* tablet */
 
 @media screen and (min-width: 768px) {
-   
+    #cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 
 
 /* desktop */
 @media screen and (min-width: 992px) {
-    
+    #cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
